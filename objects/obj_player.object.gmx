@@ -167,7 +167,6 @@ if place_meeting(x,y+1,obj_movable)
 
 
 //pushes pushable object
-
 if (!jump)
 {
     if place_meeting(x+sign(move),y,obj_movable)
@@ -234,12 +233,10 @@ if place_meeting(x,y+jump,obj_movable)
 
 if place_meeting(x,y+jump,obj_light_wall_jump_active)
 { 
-    
-    while(!place_meeting(x,y+jump,obj_light_wall_jump_active))
-    {
-        y+= sign(jump);
-    }
-    y-= 250
+    for (i = 0 i &lt; 230 i += 28)
+        {
+            jump -= 1
+        }
 }
 
 x += move;
