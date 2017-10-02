@@ -66,6 +66,7 @@ box.sprite_index = spr_moveble_box_small
 instance_create(1136,2064,obj_light_wall)
 
 instance_create(1264,2064,obj_light_wall)
+*/
 </string>
           </argument>
         </arguments>
@@ -213,7 +214,6 @@ if place_meeting(x+move,y,obj_movable)
 //vertical collision
 if place_meeting(x,y+jump,obj_ground)
 { 
-    
     while(!place_meeting(x,y+jump,obj_ground))
     {
         y+= sign(jump);
@@ -233,10 +233,11 @@ if place_meeting(x,y+jump,obj_movable)
 
 if place_meeting(x,y+jump,obj_light_wall_jump_active)
 { 
-    for (i = 0 i &lt; 230 i += 28)
+    for (i = 0 i &lt; 10 i += 1)
         {
-            jump -= 1
+            jump -= 1;
         }
+    
 }
 
 x += move;
