@@ -32,6 +32,9 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\kys.gml</script>
+  </scripts>
   <objects name="objects">
     <objects name="Characters">
       <object>objects\obj_player</object>
@@ -50,7 +53,7 @@
       <object>objects\obj_ground</object>
       <object>objects\obj_movable</object>
       <object>objects\obj_light_wall</object>
-      <object>objects\obj_light_wall_jump_active</object>
+      <object>objects\obj_light_wall_jump</object>
     </objects>
   </objects>
   <rooms name="rooms">

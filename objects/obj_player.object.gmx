@@ -3,7 +3,7 @@
   <spriteName>spr_player_dog</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -231,15 +231,40 @@ if place_meeting(x,y+jump,obj_movable)
     jump = 0;
 }
 
-if place_meeting(x,y+jump,obj_light_wall_jump_active)
-{ 
-    for (i = 0 i &lt; 10 i += 1)
+if place_meeting(x,y+jump,obj_light_wall_jump)
+    {
+    with obj_light_wall_jump
         {
-            jump -= 1;
+        if sprite_index == spr_light_wall_jump_active
+            { 
+            with obj_player
+                {
+                    jump = -jump - (-2^-(jump/8) * 6)+6
+                }
+            } 
         }
-    
-}
+    }
+                    
+with obj_light_wall_jump
+    {
+    if sprite_index == spr_light_wall_jump_active
+        {
+            with obj_player
+            {
+                if place_meeting(x+move,y,obj_light_wall_jump)
+                {
+                    while(!place_meeting(x+sign(move),y,obj_light_wall_jump))
+                    {
+                        x+= sign(move);
+                    }
+                    move = 0;
+                }
+            }
+        }
+    }
 
+
+show_debug_message(jump)
 x += move;
 y += jump;
 </string>
