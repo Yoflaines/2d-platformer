@@ -239,7 +239,7 @@ if place_meeting(x,y+jump,obj_light_wall_jump)
             { 
             with obj_player
                 {
-                    jump = -jump - (-2^-(jump/8) * 6)+6
+                    jump = -6
                 }
             } 
         }
@@ -263,8 +263,6 @@ with obj_light_wall_jump
         }
     }
 
-
-show_debug_message(jump)
 x += move;
 y += jump;
 </string>

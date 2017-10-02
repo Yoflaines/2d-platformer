@@ -32,9 +32,7 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\kys.gml</script>
-  </scripts>
+  <scripts name="scripts"/>
   <objects name="objects">
     <objects name="Characters">
       <object>objects\obj_player</object>
