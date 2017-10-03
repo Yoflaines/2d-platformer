@@ -25,8 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>gate = instance_create(1360,576,obj_ground);
-gate.image_yscale = 4;
+            <string>if room == room1
+{
+    gate = instance_create(1360,576,obj_ground);
+    gate.image_yscale = 4;
+}
+else if room == room3
+{
+}
 </string>
           </argument>
         </arguments>

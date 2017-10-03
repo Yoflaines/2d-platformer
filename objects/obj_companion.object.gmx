@@ -97,10 +97,10 @@ if mouse_check_button_pressed(mb_left)
                         with light
                         {
                             instance_change(obj_ground,false)
-                            sprite_index = spr_light_wall_active
+                            sprite_index = spr_light_wall_active;
                             if !alarm[0]
                             {
-                                alarm[0] = room_speed * 3
+                                alarm[0] = room_speed * 3;
                             }
                         } 
                     }
@@ -147,10 +147,10 @@ if mouse_check_button_pressed(mb_left)
                     {
                         with light
                         {
-                            sprite_index = spr_light_wall_jump_active
+                            sprite_index = spr_light_wall_jump_active;
                             if !alarm[0]
                             {
-                                alarm[0] = room_speed * 60
+                                alarm[0] = room_speed * 5;
                             }
                         } 
                     }

@@ -34,12 +34,21 @@ if room == rm_menu
         room_goto_next()
     }
 }
-else if room == rm_mainroom
+else if room == room1
 {
     check = collision_rectangle(32,2384,224,2336,obj_player,0,0)
     if (check)
     {
         room_goto(room2)
+    }
+}
+
+else if room == room2
+{
+    check = collision_rectangle(4784,776,4920,768,obj_player,0,0)
+    if (check)
+    {
+        room_goto(room3)
     }
 }
 
