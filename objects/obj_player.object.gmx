@@ -174,7 +174,7 @@ if (!jump)
     {
         movable = instance_place(x+sign(move),y,obj_movable);
         with (movable)
-        if !place_meeting(x+sign(move),y,obj_ground) &amp;&amp; !place_meeting(x+sign(move),y,obj_movable)
+        if !place_meeting(x+sign(move),y,obj_ground) &amp;&amp; !place_meeting(x+sign(move),y,obj_movable) &amp;&amp; !place_meeting(x+sign(move),y,obj_light_wall)
         {
             x += sign(move);
             with (obj_player)

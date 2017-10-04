@@ -3,7 +3,7 @@
   <spriteName>spr_Gate</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -55,16 +55,63 @@ else if room == room3
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Check = place_meeting(x,y,obj_player)
-Check2 = place_meeting(x,y,obj_movable)
-
-if (Check) || (Check2)
+            <string>if room == room1
 {
-    instance_deactivate_object(gate)
+    Check = place_meeting(x,y,obj_player)
+    Check2 = place_meeting(x,y,obj_movable)
+    
+    if (Check) || (Check2)
+    {
+        instance_deactivate_object(gate)
+    }
+    else
+    {
+        instance_activate_object(gate)
+    }
 }
-else
+else if room == room3
 {
-    instance_activate_object(gate)
+    if place_meeting(x,y,obj_player)
+    {
+        with obj_player
+        {
+    
+            
+            if jump &lt; 10
+            {
+                jump -= (grav*1.4) 
+                image_yscale = -1
+            }
+            
+            //not working atm
+            if place_meeting(x,y-1,obj_ground)
+            {
+                jump = jumping * -jumpspeed;
+            }
+            
+            //vertical collision
+            if place_meeting(x,y-jump,obj_ground)
+            { 
+                while(!place_meeting(x,y-jump,obj_ground))
+                {
+                    y -=jump
+                }
+                jump = 0;
+            }
+            
+            
+            
+            
+            
+        }
+    }
+    else
+    {
+        with obj_player
+        {
+            image_yscale = 1
+        }
+    }
 }
 </string>
           </argument>
