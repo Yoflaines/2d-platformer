@@ -86,7 +86,7 @@ else if room == room3
             //not working atm
             if place_meeting(x,y-1,obj_ground)
             {
-                jump = jumping * -jumpspeed;
+                jump = jumping * jumpspeed;
             }
             
             //vertical collision
@@ -98,11 +98,6 @@ else if room == room3
                 }
                 jump = 0;
             }
-            
-            
-            
-            
-            
         }
     }
     else

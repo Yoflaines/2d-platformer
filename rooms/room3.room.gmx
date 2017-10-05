@@ -79,7 +79,7 @@
     <instance objName="obj_ground" x="4576" y="1056" name="inst_B6C7A440" locked="0" code="" scaleX="27" scaleY="18" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="4576" y="1696" name="inst_E7D3E6FA" locked="0" code="" scaleX="27" scaleY="22" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3664" y="1728" name="inst_0D27183F" locked="0" code="" scaleX="30" scaleY="20" colour="4294967295" rotation="0"/>
-    <instance objName="obj_movable" x="3568" y="1392" name="inst_603C720B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_movable" x="3624" y="1392" name="inst_603C720B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2704" y="1728" name="inst_02DF2C0F" locked="0" code="" scaleX="30" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="1960" y="864" name="inst_5948264E" locked="0" code="" scaleX="27" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_light_wall" x="3400" y="1376" name="inst_0BA1CD82" locked="0" code="" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
@@ -87,6 +87,7 @@
     <instance objName="obj_ground" x="3072" y="1280" name="inst_899DAAED" locked="0" code="" scaleX="5" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_light_wall_jump" x="3176" y="1304" name="inst_64BA521E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Gate" x="2672" y="1232" name="inst_B5D4FAC3" locked="0" code="" scaleX="5" scaleY="2.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground" x="3176" y="1360" name="inst_2C44E9C5" locked="0" code="" scaleX="1.5" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
