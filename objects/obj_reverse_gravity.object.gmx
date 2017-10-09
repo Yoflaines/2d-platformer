@@ -8,34 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if room == room1
-{
-    gate = instance_create(1360,576,obj_ground);
-    gate.image_yscale = 4;
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -53,18 +25,41 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if room == room1
+            <string>if room == room3
 {
-    Check = place_meeting(x,y,obj_player)
-    Check2 = place_meeting(x,y,obj_movable)
-    
-    if (Check) || (Check2)
+    if place_meeting(x,y,obj_player)
     {
-        instance_deactivate_object(gate)
+        with obj_player
+        {
+            image_yscale = -1
+            if jump &lt; 10
+            {
+                jump -= grav
+                
+            }
+            
+            if place_meeting(x,y-1,obj_ground)
+            {
+                jump = jumping - jumpspeed
+            }
+            //vertical collision
+            if place_meeting(x,y-jump,obj_ground)
+            { 
+                while(!place_meeting(x,y-jump,obj_ground))
+                {
+                    y -=jump
+                }
+                jump = 0;
+            
+            }
+        }
     }
     else
     {
-        instance_activate_object(gate)
+        with obj_player
+        {
+            image_yscale = 1
+        }
     }
 }
 </string>

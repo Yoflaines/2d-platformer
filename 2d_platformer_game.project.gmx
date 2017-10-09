@@ -43,21 +43,22 @@
       <object>objects\obj_reselution_and_view</object>
       <object>objects\obj_restart_quit_and_fullscreen</object>
       <object>objects\obj_menu</object>
-      <object>objects\Gate</object>
       <object>objects\temoprary_companion_room</object>
+      <object>objects\Gate</object>
     </objects>
     <objects name="Objects">
       <object>objects\obj_ground</object>
       <object>objects\obj_movable</object>
       <object>objects\obj_light_wall</object>
       <object>objects\obj_light_wall_jump</object>
+      <object>objects\obj_reverse_gravity</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room3</room>
     <room>rooms\rm_menu</room>
     <room>rooms\room1</room>
     <room>rooms\room2</room>
-    <room>rooms\room3</room>
     <room>rooms\room4</room>
   </rooms>
   <help>

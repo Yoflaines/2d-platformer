@@ -140,7 +140,7 @@ if !place_meeting(x,y+2,obj_ground) &amp;&amp; !place_meeting(x,y+2,obj_movable)
           <argument>
             <kind>1</kind>
             <string>///movement and jumping
-
+show_debug_message(jump)
 //horizontal
 right = keyboard_check(ord("D"))
 left = -keyboard_check(ord("A"))
@@ -151,16 +151,20 @@ jumping = max(keyboard_check_pressed(vk_space),keyboard_check_pressed(ord("W")),
 //Move
 move = (left + right) * movespeed
 
-if jump &lt; 10
+if !place_meeting(x,y,obj_reverse_gravity)
 {
-    jump += grav; 
+    if jump &lt; 10
+    {
+        jump += grav; 
+    }
 }
-
-if place_meeting(x,y+1,obj_ground)
+if !place_meeting(x,y,obj_reverse_gravity)
 {
-    jump = jumping * -jumpspeed;
+    if place_meeting(x,y+1,obj_ground)
+    {
+        jump = jumping * -jumpspeed;
+    }
 }
-
 if place_meeting(x,y+1,obj_movable)
 {
     jump = jumping * -jumpspeed;
@@ -189,7 +193,6 @@ if (!jump)
         movespeed = 3;
     }
 }
-
 
 //horizontal collision
 if place_meeting(x+move,y,obj_ground)
