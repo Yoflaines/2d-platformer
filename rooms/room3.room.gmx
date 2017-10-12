@@ -54,7 +54,7 @@
     <instance objName="obj_camera" x="208" y="104" name="inst_F7A4C1AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_reselution_and_view" x="240" y="104" name="inst_5C3C4AD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_restart_quit_and_fullscreen" x="272" y="104" name="inst_46507C20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu" x="304" y="104" name="inst_76F6DD86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu" x="1000" y="2120" name="inst_76F6DD86" locked="0" code="" scaleX="1.25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="96" y="416" name="inst_59BAB285" locked="0" code="" scaleX="6" scaleY="26" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="528" y="256" name="inst_C02991AB" locked="0" code="" scaleX="12" scaleY="16" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="360" y="752" name="inst_1883A443" locked="0" code="" scaleX="10.5" scaleY="5" colour="4294967295" rotation="0"/>
@@ -91,12 +91,14 @@
     <instance objName="obj_ground" x="3088" y="1728" name="inst_401EFEA8" locked="0" code="" scaleX="6" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2664" y="1280" name="inst_2C5D163A" locked="0" code="" scaleX="5" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2456" y="1344" name="inst_05A61E0A" locked="0" code="" scaleX="8" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_reverse_gravity" x="1728" y="1272" name="inst_894F3DDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_reverse_gravity" x="1352" y="1192" name="inst_1F865D09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="896" y="1744" name="inst_267AE9D7" locked="0" code="" scaleX="20" scaleY="20" colour="4294967295" rotation="0"/>
+    <instance objName="obj_reverse_gravity" x="1824" y="1328" name="inst_1F865D09" locked="0" code="" scaleX="1" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground" x="1392" y="1520" name="inst_267AE9D7" locked="0" code="" scaleX="20" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="800" y="944" name="inst_CF84C82E" locked="0" code="" scaleX="50" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="96" y="1472" name="inst_C9D993E9" locked="0" code="" scaleX="6" scaleY="26" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="96" y="2296" name="inst_82FC9157" locked="0" code="" scaleX="6" scaleY="26" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground" x="1872" y="1728" name="inst_36C288B3" locked="0" code="" scaleX="10" scaleY="20" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground" x="560" y="1888" name="inst_A99AAE44" locked="0" code="" scaleX="23" scaleY="52" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground" x="1392" y="2160" name="inst_3C41128B" locked="0" code="" scaleX="20" scaleY="20" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

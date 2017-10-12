@@ -96,7 +96,7 @@
     <instance objName="obj_light_wall_jump" x="4080" y="504" name="inst_B9407519" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2496" y="1360" name="inst_7AD86F91" locked="0" code="" scaleX="42" scaleY="26" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3776" y="96" name="inst_CC618C58" locked="0" code="" scaleX="32" scaleY="6" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu" x="4856" y="976" name="inst_A2E98D1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu" x="4856" y="976" name="inst_A2E98D1A" locked="0" code="" scaleX="1.25" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

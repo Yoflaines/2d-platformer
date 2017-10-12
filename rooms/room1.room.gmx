@@ -108,7 +108,7 @@
     <instance objName="obj_companion" x="256" y="640" name="inst_A02E63F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="656" y="2048" name="inst_395E7020" locked="0" code="" scaleX="26" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_light_wall" x="1104" y="2064" name="inst_2021F6DA" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu" x="176" y="2304" name="inst_2E59FF86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu" x="128" y="2304" name="inst_2E59FF86" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="336" y="2448" name="inst_FB7D2975" locked="0" code="" scaleX="6" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="16" y="2416" name="inst_88237F12" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="208" y="2176" name="inst_C6230C0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
