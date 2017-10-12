@@ -87,9 +87,16 @@
     <instance objName="obj_ground" x="3072" y="1280" name="inst_899DAAED" locked="0" code="" scaleX="5" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_light_wall_jump" x="3176" y="1304" name="inst_64BA521E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3176" y="1360" name="inst_2C44E9C5" locked="0" code="" scaleX="1.5" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_reverse_gravity" x="2864" y="1320" name="inst_F3649D25" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_reverse_gravity" x="2864" y="1288" name="inst_F3649D25" locked="0" code="" scaleX="0.75" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3088" y="1728" name="inst_401EFEA8" locked="0" code="" scaleX="6" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2664" y="1280" name="inst_2C5D163A" locked="0" code="" scaleX="5" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground" x="2456" y="1344" name="inst_05A61E0A" locked="0" code="" scaleX="8" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_reverse_gravity" x="1728" y="1272" name="inst_894F3DDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_reverse_gravity" x="1352" y="1192" name="inst_1F865D09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground" x="896" y="1744" name="inst_267AE9D7" locked="0" code="" scaleX="20" scaleY="20" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground" x="800" y="944" name="inst_CF84C82E" locked="0" code="" scaleX="50" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground" x="96" y="1472" name="inst_C9D993E9" locked="0" code="" scaleX="6" scaleY="26" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground" x="96" y="2296" name="inst_82FC9157" locked="0" code="" scaleX="6" scaleY="26" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
