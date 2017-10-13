@@ -2,12 +2,40 @@
 <object>
   <spriteName>spr_gate</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
-  <depth>0</depth>
+  <visible>-1</visible>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if room == room1
+{
+    gate = instance_create(1360,576,obj_ground);
+    gate.image_yscale = 4;
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,46 +53,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///just transitions the first room to the other (placeholder)
-if room == rm_menu
+            <string>if room == room1
 {
-    if place_meeting(x,y,obj_player)
+    Check = place_meeting(x,y,obj_player)
+    Check2 = place_meeting(x,y,obj_movable)
+    
+    if (Check) || (Check2)
     {
-        room_goto(room1)
+        instance_deactivate_object(gate)
+    }
+    else
+    {
+        instance_activate_object(gate)
     }
 }
-
-else if room == room1
-{
-    if place_meeting(x,y,obj_player)
-    {
-        room_goto(room2)
-    }
-}
-
-else if room == room2
-{
-    if place_meeting(x,y,obj_player)
-    {
-        room_goto(room3)
-    }
-}
-
-else if room == room3
-{
-    if place_meeting(x,y,obj_player)
-    {
-        room_goto(room4)
-    }
-}
-else if room == room4
-{
-    if place_meeting(x,y,obj_player)
-    {
-        room_goto(room_boss)
-    }
-}
-
 </string>
           </argument>
         </arguments>

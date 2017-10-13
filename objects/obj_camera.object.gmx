@@ -51,7 +51,7 @@ y = obj_player.y
             <kind>1</kind>
             <string>var ToX,ToY;
 ToX = obj_player.x
-ToY = obj_player.y
+ToY = obj_player.y - 64
 
 x += (ToX-x)/3;
 y += (ToY-y)/3;

@@ -27,8 +27,9 @@
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_AEnemy</sprite>
+      <sprite>sprites\spr_boss</sprite>
     </sprites>
-    <sprite>sprites\spr_Gate</sprite>
+    <sprite>sprites\spr_gate</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -37,6 +38,10 @@
       <object>objects\obj_player</object>
       <object>objects\obj_enemy</object>
       <object>objects\obj_companion</object>
+      <objects name="Enemies">
+        <object>objects\obj_boss</object>
+        <object>objects\obj_enemy1</object>
+      </objects>
     </objects>
     <objects name="Things">
       <object>objects\obj_camera</object>
@@ -44,7 +49,8 @@
       <object>objects\obj_restart_quit_and_fullscreen</object>
       <object>objects\obj_menu</object>
       <object>objects\temoprary_companion_room</object>
-      <object>objects\Gate</object>
+      <object>objects\obj_gate</object>
+      <object>objects\obj_event</object>
     </objects>
     <objects name="Objects">
       <object>objects\obj_ground</object>
@@ -60,6 +66,7 @@
     <room>rooms\room2</room>
     <room>rooms\room3</room>
     <room>rooms\room4</room>
+    <room>rooms\room_boss</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
