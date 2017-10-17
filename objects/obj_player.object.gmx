@@ -35,7 +35,7 @@ jump = 0
 movespeed = 3
 jumpspeed = 3
 
-knockback = false
+knockback = 0
 </string>
           </argument>
         </arguments>
@@ -91,30 +91,8 @@ instance_create(1264,2064,obj_light_wall)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>knockback = false
+            <string>knockback = 0
 </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>
@@ -311,25 +289,40 @@ with obj_light_wall_jump
         }
     }
 
-    
-    
-    
-    
-///Knockback with enemies
-if place_meeting(x,y,obj_enemy1) &amp;&amp; knockback == false
-{ 
-    knockback = true
-    alarm[0] = 60 * 2
-    move_towards_point(x-128,y-3,movespeed)
-
-}
-    
-show_debug_message(knockback)
-    
-    
-    
 x += move;
 y += jump;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Knockback
+
+//Knockback with enemies
+if knockback == 0 &amp;&amp; place_meeting(x,y,obj_enemy1)
+{ 
+    knockback = 1
+    alarm[0] = 30
+    move_towards_point(x-128,y-3,3)
+}
+    
+show_debug_message(jump)
+show_debug_message(x)
 </string>
           </argument>
         </arguments>
