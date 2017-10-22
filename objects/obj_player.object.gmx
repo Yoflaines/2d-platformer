@@ -317,17 +317,14 @@ y += jump;
 if knockback == 0 &amp;&amp; place_meeting(x,y,obj_enemy1)
 { 
     knockback = 1
-
-    jump -= 2
     
-    x -= 30
+    alarm[0] = room_speed*3
     
-    alarm[0] = 60
 }
     
 show_debug_message(jump)
 show_debug_message(x)
-
+show_debug_message(knockback)
 </string>
           </argument>
         </arguments>
