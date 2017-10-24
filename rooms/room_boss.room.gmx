@@ -54,14 +54,14 @@
     <instance objName="obj_camera" x="1216" y="136" name="inst_F7A4C1AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_reselution_and_view" x="1248" y="136" name="inst_5C3C4AD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_restart_quit_and_fullscreen" x="1280" y="136" name="inst_46507C20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="1208" y="1184" name="inst_D25F4B9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="1000" y="1256" name="inst_D25F4B9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="1280" y="1760" name="inst_109DB7C0" locked="0" code="" scaleX="20" scaleY="30" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2080" y="416" name="inst_F8EBE405" locked="0" code="" scaleX="30" scaleY="26" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2080" y="1920" name="inst_B58964A6" locked="0" code="" scaleX="30" scaleY="40" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="480" y="800" name="inst_E4E41A3A" locked="0" code="" scaleX="30" scaleY="50" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="480" y="2080" name="inst_5F14999C" locked="0" code="" scaleX="30" scaleY="30" colour="4294967295" rotation="0"/>
     <instance objName="obj_companion" x="1184" y="1056" name="inst_331C2BA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy1" x="1384" y="1224" name="inst_4044AFEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy1" x="1176" y="1248" name="inst_4044AFEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

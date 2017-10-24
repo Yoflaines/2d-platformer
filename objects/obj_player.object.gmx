@@ -174,8 +174,10 @@ left = -keyboard_check(ord("A"))
 jumping = max(keyboard_check_pressed(vk_space),keyboard_check_pressed(ord("W")),0)
 
 //Move
-move = (left + right) * movespeed
-
+if knockback == 0
+{
+    move = (left + right) * movespeed
+}
 if !place_meeting(x,y,obj_reverse_gravity)
 {
     if jump &lt; 10
@@ -315,16 +317,42 @@ y += jump;
 
 //Knockback with enemies
 if knockback == 0 &amp;&amp; place_meeting(x,y,obj_enemy1)
-{ 
-    knockback = 1
+{
+    knockback = 1 
     
-    alarm[0] = room_speed*3
-    
+    alarm[0] = room_speed/2
 }
+
+if knockback == 1
+{
+    /*
+    push_dir = obj_enemy1.move
     
+    move -= lengthdir_x(push_dir, push_dir);
+    jump += lengthdir_y(0.1, 90);
+    */
+    enemy_dir = point_direction(obj_enemy1.x,obj_enemy1.y,x,y)
+    
+    knckbck = 0.4^0.4-0.4
+    
+    if enemy_dir &gt;= 270
+    {
+        move = movespeed
+        jump += knckbck
+    }
+    else
+    {
+        move = -movespeed
+        jump += knckbck
+    }
+}
+
 show_debug_message(jump)
-show_debug_message(x)
-show_debug_message(knockback)
+show_debug_message(move)
+
+dir = point_direction(obj_enemy1.x,obj_enemy1.y,x,y)
+
+show_debug_message(dir)
 </string>
           </argument>
         </arguments>
