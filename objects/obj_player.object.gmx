@@ -178,6 +178,7 @@ if knockback == 0
 {
     move = (left + right) * movespeed
 }
+
 if !place_meeting(x,y,obj_reverse_gravity)
 {
     if jump &lt; 10
@@ -325,12 +326,6 @@ if knockback == 0 &amp;&amp; place_meeting(x,y,obj_enemy1)
 
 if knockback == 1
 {
-    /*
-    push_dir = obj_enemy1.move
-    
-    move -= lengthdir_x(push_dir, push_dir);
-    jump += lengthdir_y(0.1, 90);
-    */
     enemy_dir = point_direction(obj_enemy1.x,obj_enemy1.y,x,y)
     
     knckbck = 0.4^0.4-0.4
@@ -346,13 +341,6 @@ if knockback == 1
         jump += knckbck
     }
 }
-
-show_debug_message(jump)
-show_debug_message(move)
-
-dir = point_direction(obj_enemy1.x,obj_enemy1.y,x,y)
-
-show_debug_message(dir)
 </string>
           </argument>
         </arguments>
